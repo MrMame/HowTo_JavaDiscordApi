@@ -22,13 +22,11 @@
             <artifactId>JDA</artifactId>
             <version>5.0.0-beta.12</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-reload4j -->
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
+            <artifactId>slf4j-reload4j</artifactId>
             <version>2.0.7</version>
-<!--            <type>pom</type>-->
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
@@ -36,37 +34,88 @@
             <artifactId>slf4j-api</artifactId>
             <version>2.0.7</version>
         </dependency>
-
-
-
-
-
         <!--Config File Reader-->
         <dependency>
             <groupId>de.mme</groupId>
             <artifactId>ConfigFileManager</artifactId>
             <version>0.3.0</version>
         </dependency>
-
-
-
-
     </dependencies>
-<!--    -->
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <version>2.12.4</version>-->
-<!--                <configuration>-->
-<!--                    <additionalClasspathElements>-->
-<!--                        <additionalClasspathElement>path/to/additional/resources</additionalClasspathElement>-->
-<!--                        <additionalClasspathElement>path/to/additional/jar</additionalClasspathElement>-->
-<!--                    </additionalClasspathElements>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
-<!--        -->
+
+    <build>
+        <plugins>
+            <!--
+                This PlugIn wil configure the Manifest File inside the JAR File.
+                EntryPoint Main Class is getting  defined. Also all Dependencies are
+                defined inside classpath with the leading folder prefix "lib"
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>de.mme.dapi.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!--
+                This Plug In will copy all used dependecies into the target directory "lib"
+                of the output folder. Keep in mind that this folder has to match with the classpath folder
+                inside the MANIFEST File.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--
+                This Plug is used top copy the configuration files from the development  environment into the
+                output folder of the application during the install lifecycle
+             -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>copy-resource-one</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+
+                        <configuration>
+                            <outputDirectory>${basedir}/target/configs</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/resources/configs</directory>
+                                    <includes>
+                                        <include>*.cfg</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+
+        </plugins>
+    </build>
+
+
 </project>

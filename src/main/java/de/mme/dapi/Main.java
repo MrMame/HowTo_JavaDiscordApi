@@ -1,3 +1,5 @@
+package de.mme.dapi;
+
 import de.mme.cfm.configurations.Configuration;
 import de.mme.cfm.repositories.ConfigurationRepository;
 import de.mme.cfm.repositories.TextFileRepository;
@@ -9,13 +11,13 @@ import org.slf4j.LoggerFactory;
 
 import java.nio.file.Path;
 
-public class main {
+public class Main {
 
 
     private static String discordConfigFilename = "configs/discordSettings.cfg";
     static private Configuration cfg;
 
-    private static Logger LOGGER = LoggerFactory.getLogger(main.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     static{
         ConfigurationRepository cfgFile = new TextFileRepository(Path.of(discordConfigFilename));;
