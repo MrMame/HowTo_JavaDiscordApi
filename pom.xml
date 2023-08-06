@@ -46,6 +46,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
                 <configuration>
                     <archive>
                         <manifest>
@@ -65,8 +66,9 @@
                 inside the MANIFEST File.
             -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
                 <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <phase>install</phase>
