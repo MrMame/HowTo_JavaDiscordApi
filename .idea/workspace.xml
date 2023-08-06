@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d7b05a7-435a-4460-aff9-e0e36ec1514b" name="Changes" comment="Spelling Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4d7b05a7-435a-4460-aff9-e0e36ec1514b" name="Changes" comment="Changed structure of README">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691309602573</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Changed structure of README">
+      <option name="closed" value="true" />
+      <created>1691309963532</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1691309963532</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +187,7 @@
     <MESSAGE value="removed old ConfigFileManager dependecies" />
     <MESSAGE value="created first version" />
     <MESSAGE value="Spelling Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spelling Changes" />
+    <MESSAGE value="Changed structure of README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed structure of README" />
   </component>
 </project>

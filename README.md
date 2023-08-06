@@ -47,7 +47,7 @@ You can define the behaviour of the log4j-logger by changing the values inside t
 A short description can be found on the Oracle
 website [here](https://docs.oracle.com/cd/E29578_01/webhelp/cas_webcrawler/src/cwcg_config_log4j_file.html).
 
-## discordSettings.properties
+### discordSettings.properties
 Here you have to put all the Discord related stuff into. The file is located at the ```externalConfigs``` subfolder
 of the installed application or at the project folder ```src/main/java/resources/externalConfigs```
 - **settings.discord.token=**</br>
