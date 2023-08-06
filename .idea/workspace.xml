@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d7b05a7-435a-4460-aff9-e0e36ec1514b" name="Changes" comment="removed old ConfigFileManager dependecies">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="4d7b05a7-435a-4460-aff9-e0e36ec1514b" name="Changes" comment="Spelling Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,17 +32,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/markus/Projects-Java/HowTo_JavaDiscordApi/src/main/resources/configs&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/markus/Projects-Java/HowTo_JavaDiscordApi/src/main/resources/configs",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/configs" />
@@ -139,7 +138,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691307688056</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="created first version">
+      <option name="closed" value="true" />
+      <created>1691309563195</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1691309563195</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Spelling Changes">
+      <option name="closed" value="true" />
+      <created>1691309602573</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1691309602573</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +178,8 @@
     <MESSAGE value="Created ExternalConfigReader class for reading external resource files in &lt;projectFolder&gt;/externalConfigs folder." />
     <MESSAGE value="externalConfigs folder changed" />
     <MESSAGE value="removed old ConfigFileManager dependecies" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed old ConfigFileManager dependecies" />
+    <MESSAGE value="created first version" />
+    <MESSAGE value="Spelling Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spelling Changes" />
   </component>
 </project>
