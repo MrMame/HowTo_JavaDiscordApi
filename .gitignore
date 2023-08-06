@@ -38,6 +38,4 @@ build/
 .DS_Store
 
 ### No Configs for you guys :) ###
-/configs/discordSettings.cfg
-/src/main/resources/discordSettings.properties
-/src/main/resources/configs/discordSettings.cfg
+/src/main/resources/externalConfigs/discordSettings.properties
