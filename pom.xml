@@ -60,6 +60,9 @@
                             <mainClass>de.mme.dapi.Main</mainClass>
                         </manifest>
                     </archive>
+                    <excludes>
+                        <exclude>externalConfigs/**</exclude>  <!-- externalConfigs are not stored inside JAR File-->
+                    </excludes>
                 </configuration>
             </plugin>
             <!--
@@ -98,12 +101,12 @@
                         </goals>
 
                         <configuration>
-                            <outputDirectory>${basedir}/target/configs</outputDirectory>
+                            <outputDirectory>${basedir}/target/externalConfigs</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>src/main/resources/configs</directory>
+                                    <directory>src/main/resources/externalConfigs</directory>
                                     <includes>
-                                        <include>*.cfg</include>
+                                        <include>*.properties</include>
                                     </includes>
                                 </resource>
                             </resources>
