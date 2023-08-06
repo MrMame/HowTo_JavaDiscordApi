@@ -1,8 +1,5 @@
 package de.mme.dapi;
 
-import de.mme.cfm.configurations.Configuration;
-import de.mme.cfm.repositories.ConfigurationRepository;
-import de.mme.cfm.repositories.TextFileRepository;
 import de.mme.dapi.utils.ExternalConfigReader;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
@@ -17,9 +14,7 @@ import java.nio.file.Paths;
 public class Main {
 
 
-    static private Configuration cfg;
-
-    private static Logger LOGGER = LoggerFactory.getLogger(Main.class);
+     static Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
 
     public static void main(String[] args){

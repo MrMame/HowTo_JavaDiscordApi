@@ -34,12 +34,6 @@
             <artifactId>slf4j-api</artifactId>
             <version>2.0.7</version>
         </dependency>
-        <!--Config File Reader-->
-        <dependency>
-            <groupId>de.mme</groupId>
-            <artifactId>ConfigFileManager</artifactId>
-            <version>0.3.0</version>
-        </dependency>
     </dependencies>
 
     <build>
