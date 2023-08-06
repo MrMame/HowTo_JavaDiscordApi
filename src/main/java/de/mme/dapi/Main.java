@@ -19,16 +19,10 @@ public class Main {
     public static void main(String[] args){
 
         // INIT the Application
-        initLogger();
-        initExternalConfigReaders();
-
-        logger.info("...Application Initialized");
+        initApplication();
 
         // Get Configurations
         String discordToken = discordConfigs.readProperty("settings.discord.token");
-        discordToken = discordConfigs.readProperty("settings.discord.tokenXX");
-
-
 
         JDABuilder builder = JDABuilder.createDefault(discordToken);
 
@@ -42,6 +36,12 @@ public class Main {
         builder.build();
     }
 
+
+    private static void initApplication(){
+        initLogger();
+        initExternalConfigReaders();
+        logger.info("...Application Initialized");
+    }
     private static void initLogger(){
        logger = LoggerFactory.getLogger(Main.class);
        logger.info("...logger initialized...");
