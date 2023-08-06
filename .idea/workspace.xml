@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d7b05a7-435a-4460-aff9-e0e36ec1514b" name="Changes" comment="externalConfigs Path will not be included into JAR File">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mme/dapi/utils/ExternalConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/externalConfigs/default_discordSettings.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4d7b05a7-435a-4460-aff9-e0e36ec1514b" name="Changes" comment="removed old ConfigFileManager dependecies">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/mme/dapi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/mme/dapi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configs/discordSettingsExample.cfg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2TVjKX9b1tpbnRKuToXho1HLuto" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -108,7 +107,39 @@
       <option name="project" value="LOCAL" />
       <updated>1691304968908</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="discordSettings.properties file will be ignored">
+      <option name="closed" value="true" />
+      <created>1691305044755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691305044755</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created ExternalConfigReader class for reading external resource files in &lt;projectFolder&gt;/externalConfigs folder.">
+      <option name="closed" value="true" />
+      <created>1691305120597</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691305120597</updated>
+    </task>
+    <task id="LOCAL-00009" summary="externalConfigs folder changed">
+      <option name="closed" value="true" />
+      <created>1691305200809</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691305200809</updated>
+    </task>
+    <task id="LOCAL-00010" summary="removed old ConfigFileManager dependecies">
+      <option name="closed" value="true" />
+      <created>1691307688056</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1691307688056</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +159,10 @@
     <MESSAGE value="Added slf4j-log4j logging to the project" />
     <MESSAGE value="POM Config - Copy Config Files to Target folder" />
     <MESSAGE value="externalConfigs Path will not be included into JAR File" />
-    <option name="LAST_COMMIT_MESSAGE" value="externalConfigs Path will not be included into JAR File" />
+    <MESSAGE value="discordSettings.properties file will be ignored" />
+    <MESSAGE value="Created ExternalConfigReader class for reading external resource files in &lt;projectFolder&gt;/externalConfigs folder." />
+    <MESSAGE value="externalConfigs folder changed" />
+    <MESSAGE value="removed old ConfigFileManager dependecies" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed old ConfigFileManager dependecies" />
   </component>
 </project>
