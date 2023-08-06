@@ -1,6 +1,8 @@
 package de.mme.dapi;
 
+import de.mme.dapi.discord.JDAFactory;
 import de.mme.dapi.utils.ExternalConfigReader;
+import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
@@ -24,16 +26,9 @@ public class Main {
         // Get Configurations
         String discordToken = discordConfigs.readProperty("settings.discord.token");
 
-        JDABuilder builder = JDABuilder.createDefault(discordToken);
+        // get Main Discord Api Object
+        JDA jda = JDAFactory.CreateJda(discordToken);
 
-        // Disable parts of the cache
-        builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
-        // Enable the bulk delete event
-        builder.setBulkDeleteSplittingEnabled(false);
-        // Set activity (like "playing Something")
-        builder.setActivity(Activity.watching("TV"));
-
-        builder.build();
     }
 
 
