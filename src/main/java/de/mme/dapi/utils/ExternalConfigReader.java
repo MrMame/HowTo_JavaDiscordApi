@@ -75,7 +75,7 @@ public class ExternalConfigReader {
                         .getLocation()
                         .toURI()
                         .getPath();
-                System.out.println("JAR Path : " + jarPath + "\n");
+                //System.out.println("JAR Path : " + jarPath + "\n");
                 // Get Folder Name
                 jarPath = "/" + jarPath.substring(1,jarPath.lastIndexOf("/")+1);
 
