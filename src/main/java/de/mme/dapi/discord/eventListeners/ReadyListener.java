@@ -1,4 +1,4 @@
-package de.mme.dapi.discord.events;
+package de.mme.dapi.discord.eventListeners;
 
 import net.dv8tion.jda.api.events.GenericEvent;
 import net.dv8tion.jda.api.events.session.ReadyEvent;

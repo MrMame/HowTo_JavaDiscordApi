@@ -67,3 +67,10 @@ whatever logger lib you want that is compatible with slf4j.
 So both dependencies are necessary. I decided to use log4j. This is included in the reload4j lib. </br>
 - [slf4j-reload4j](https://mvnrepository.com/artifact/org.slf4j/slf4j-reload4j)</br>
 - [slf4j-api](https://mvnrepository.com/artifact/org.slf4j/slf4j-api)
+
+
+## Appendix - Video Tutorial Links
+Some links to video tutorials I used for tose examples in here
+
+- [Embeds](https://www.youtube.com/watch?v=btuzgvDZhA8&list=PLfu_Bpi_zcDNcs3j5tR6VQA5fSVDCpNeC&index=5)
+- [RestActions, e.g. queue() ](https://jda.wiki/using-jda/using-restaction/)

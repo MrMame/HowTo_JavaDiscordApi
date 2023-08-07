@@ -1,6 +1,7 @@
 package de.mme.dapi.discord;
 
-import de.mme.dapi.discord.events.ReadyListener;
+import de.mme.dapi.discord.eventListeners.ChannelListener;
+import de.mme.dapi.discord.eventListeners.ReadyListener;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
@@ -12,7 +13,7 @@ public class JDAFactory {
 
     static Logger logger = LoggerFactory.getLogger(JDAFactory.class);
 
-    public static JDA CreateJda(String discordToken)  {
+    public static JDA CreateExampleJda(String discordToken)  {
 
         JDA returnJda = null;
 
@@ -23,10 +24,13 @@ public class JDAFactory {
         // Enable the bulk delete event
         builder.setBulkDeleteSplittingEnabled(false);
         // Set activity (like "playing Something")
-        builder.setActivity(Activity.watching("TV"));
+        builder.setActivity(Activity.watching("ExampleJDA running"));
 
-        // Add all Event Releated code here
+        // Add all Event listeners her you want to be handled
+        // --------------------------------------------------------------------
         builder.addEventListeners(new ReadyListener());
+        builder.addEventListeners(new ChannelListener());
+        // --------------------------------------------------------------------
 
         returnJda =  builder.build();
 

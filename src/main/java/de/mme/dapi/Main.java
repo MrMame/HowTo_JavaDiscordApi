@@ -3,9 +3,6 @@ package de.mme.dapi;
 import de.mme.dapi.discord.JDAFactory;
 import de.mme.dapi.utils.ExternalConfigReader;
 import net.dv8tion.jda.api.JDA;
-import net.dv8tion.jda.api.JDABuilder;
-import net.dv8tion.jda.api.entities.Activity;
-import net.dv8tion.jda.api.utils.cache.CacheFlag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,8 +23,8 @@ public class Main {
         // Get Configurations
         String discordToken = discordConfigs.readProperty("settings.discord.token");
 
-        // get Main Discord Api Object
-        JDA jda = JDAFactory.CreateJda(discordToken);
+        // get Main Discord Api Object, this also will start all Listeners
+        JDA jda = JDAFactory.CreateExampleJda(discordToken);
 
     }
 
