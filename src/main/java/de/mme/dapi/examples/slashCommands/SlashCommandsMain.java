@@ -19,6 +19,17 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
+
+
+/*
+*
+*   Slash Commands Example.
+*
+*   Keep in Mind that you have to use the reply() method of the slashCommand-event. Otherwise Discord will show a message,
+*   that the application didn't respond to the command !!!
+*
+* */
+
 public class SlashCommandsMain extends ListenerAdapter
 {
     public static void main(String[] args) throws IOException {
