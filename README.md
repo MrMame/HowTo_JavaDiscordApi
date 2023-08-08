@@ -72,9 +72,8 @@ So both dependencies are necessary. I decided to use log4j. This is included in 
 ## Appendix - Tutorial Links
 Some links to video tutorials I used for tose examples in here
 
-**YouTube-Channels**
+### **YouTube-Channels**
 - [Cody Simpson - JDA - Embeds](https://www.youtube.com/watch?v=btuzgvDZhA8&list=PLfu_Bpi_zcDNcs3j5tR6VQA5fSVDCpNeC&index=5)
 - [TechnoVision - JDA](https://www.youtube.com/watch?v=fwEJnX7KJ30&list=PLDhiRTZ_vnoWcdVDvT896SjLmqMfPvrXK&index=5)
-  </br>
-**Technical Informations**
+### **Technical Informations**
 - [RestActions, e.g. queue() ](https://jda.wiki/using-jda/using-restaction/)
