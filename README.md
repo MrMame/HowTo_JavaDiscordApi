@@ -41,7 +41,7 @@ the ```/lib``` subfolder of the installed project by using _maven-dependency-plu
 Additionally, you have to point to the new lib folder inside the JAR's MANIFEST file. 
 This is set by using the ```classPath``` value of Mavens _maven-jar-plugin_ inside the ```pom.xml``` file.
 
-## Appendix - Application Settings
+## App - Property Settings
 ### log4j.properties
 You can define the behaviour of the log4j-logger by changing the values inside the log4j.properties file.
 A short description can be found on the Oracle
@@ -55,7 +55,7 @@ of the installed application or at the project folder ```src/main/java/resources
   have created a discord bot first. [Here](https://www.ionos.com/digitalguide/server/know-how/creating-discord-bot/)
   is a small HowTo on how to create your own discord bot for getting you started.
 
-## Appendix - Application Dependencies
+## App - Dependencies
 
 ### Java Discord API
 Discord API Wrapper for Java.</br>
@@ -69,8 +69,11 @@ So both dependencies are necessary. I decided to use log4j. This is included in 
 - [slf4j-api](https://mvnrepository.com/artifact/org.slf4j/slf4j-api)
 
 
-## Appendix - Video Tutorial Links
+## Appendix - Tutorial Links
 Some links to video tutorials I used for tose examples in here
 
-- [Embeds](https://www.youtube.com/watch?v=btuzgvDZhA8&list=PLfu_Bpi_zcDNcs3j5tR6VQA5fSVDCpNeC&index=5)
+### **YouTube-Channels**
+- [Cody Simpson - JDA - Embeds](https://www.youtube.com/watch?v=btuzgvDZhA8&list=PLfu_Bpi_zcDNcs3j5tR6VQA5fSVDCpNeC&index=5)
+- [TechnoVision - JDA](https://www.youtube.com/watch?v=fwEJnX7KJ30&list=PLDhiRTZ_vnoWcdVDvT896SjLmqMfPvrXK&index=5)
+### **Technical Informations**
 - [RestActions, e.g. queue() ](https://jda.wiki/using-jda/using-restaction/)
