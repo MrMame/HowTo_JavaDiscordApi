@@ -86,28 +86,6 @@ public class EmbedsWithReactionsMain extends ListenerAdapter
                 });
 
 
-//                /* send it into the channel
-//                    The Queu methode let you access the message , so you can change it again
-//                * */
-//                event.getChannel().sendMessageEmbeds(theEmbed).queue((msg)->{
-//                    Emoji reactionROFL = Emoji.fromUnicode(":rofl:");
-//                    Emoji reactionA = Emoji.fromUnicode("U+1F1E6");
-//                    Emoji reactionB = Emoji.fromUnicode("U+1F1E7");
-//                    Emoji reactionC = Emoji.fromUnicode("U+1F1E8");
-//                    Emoji reactionD = Emoji.fromUnicode("U+1F1E9");
-//                    Emoji reactionE = Emoji.fromUnicode("U+1F1EA");
-//
-//                    /* PROBLEM : This will senda message with delay on each queue. You can see the reactions popping
-//                     each step by step over time. very annoying. But Thats the way it goes. there is no mass addReaction
-//                     function available. Other bots are doing it the same way.... Step by Step, each time an own queue()
-//                     */
-//                    msg.addReaction(reactionROFL).queue();
-//                    msg.addReaction(reactionA).queue();
-//                    msg.addReaction(reactionB).queue();
-//                    msg.addReaction(reactionC).queue();
-//                    msg.addReaction(reactionD).queue();
-//                    msg.addReaction(reactionE).queue();
-//                });
                 break;
         }
     }
