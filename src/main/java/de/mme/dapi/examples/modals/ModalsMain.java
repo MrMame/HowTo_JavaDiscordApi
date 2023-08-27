@@ -84,6 +84,7 @@ public class ModalsMain extends ListenerAdapter
             // Subject Textinput field
             TextInput subject = TextInput.create(MODAL_INPUTFIELD_ID_SUBJECT, "Subject", TextInputStyle.SHORT)
                     .setPlaceholder("Subject of this ticket")
+                    .setRequired(true)  // Requires a value. Now we can be sure that this element is existing later if we try to get its value.
                     .setMinLength(10)
                     .setMaxLength(100) // or setRequiredRange(10, 100)
                     .build();
