@@ -79,6 +79,7 @@ public class MessageWithButtonsMain extends ListenerAdapter
                 MessageCreateBuilder msgBuilder = new MessageCreateBuilder();
                 msgBuilder.addContent("This is an example message with 4 buttons and some Empbed Message");
 
+                // ADD BUTTONS --------------------------------------------------------------------------------
                 // Create 4 buttons and add them to the MessageBuilder
                 Button ButtonAllow = Button.primary("btn-allow-id","Allow");
                 Button ButtonDeny = Button.secondary("btn-deny-id","Deny");
@@ -88,15 +89,25 @@ public class MessageWithButtonsMain extends ListenerAdapter
                 msgBuilder.setActionRow(ButtonAllow,ButtonDeny,ButtonDenyWithReason,ButtonAlert);
 
 
-                // Create an embed to include into the message and add it to the MessageBuilder
+                // ADD EMBEDS - Create an embed to include into the message and add it to the MessageBuilder
+                // ----------------------------------------------------------------------------
+                // Embed A
                 EmbedBuilder eb = new EmbedBuilder();
                 eb.setAuthor("Embedded Author")
                         .setColor(Color.RED)
                         .setTitle("The embed text")
                         .setDescription("The embed description");
                 MessageEmbed theEmbed = eb.build();
+                // Embed B
+                EmbedBuilder ebB = new EmbedBuilder();
+                ebB.setAuthor("Kein Author notwendig")
+                        .setColor(Color.GREEN)
+                        .setTitle("This is the title of Embed B")
+                        .setDescription("Description of embed B");
+                MessageEmbed theEmbedB = eb.build();
 
-                msgBuilder.addEmbeds(theEmbed);
+
+                msgBuilder.addEmbeds(theEmbed,theEmbedB);
 
 
                 // Create the final message object
@@ -105,6 +116,7 @@ public class MessageWithButtonsMain extends ListenerAdapter
                 // Send the final Message back to slash command channel, but we also add some Reactions :)
                 event.reply("Sure").queue();
                 event.getChannel().sendMessage(finalMessage).queue((msg)->{
+                    // ADD REACTIONS ---------------------------------------------------------------
                     Emoji reactionA = Emoji.fromUnicode("U+1F1E6");
                     Emoji reactionB = Emoji.fromUnicode("U+1F1E7");
                     msg.addReaction(reactionA).queue();
